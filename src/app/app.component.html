@@ -1,0 +1,20 @@
+<div style="padding: 10px;">User Entered Tag with List box</div>
+<div>
+  <p-chips
+  (onAdd)="onEnterKeyPress($event)"
+  (click)="onInputClick($event, overlaypanel);"
+  [(ngModel)]="selectedTags"
+  [styleClass]="customTagStyle"
+>
+</p-chips>
+<p-overlayPanel #overlaypanel [dismissable]="true" [focusOnShow]="true">
+  <p-listbox
+    [options]="cities"
+    (onClick)="selectedTagOption($event)"
+    [filter]="true"
+    optionLabel="label"
+    [style]="{ width: '15rem', 'max-height': '200px', 'overflow-y': 'auto' }"
+  ></p-listbox>
+</p-overlayPanel>
+
+</div>

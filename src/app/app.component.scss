@@ -1,0 +1,24 @@
+:host ::ng-deep .custom-chips ul {
+    caret-color: transparent;
+    overflow: auto;
+    max-width: 500px;
+    max-height: 70px;
+    display: inline-block;
+  }
+  
+  :host ::ng-deep .custom-chips ul li .p-chips-token-label {
+    max-width: 130px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+
+  
+  /* .custom-chips {
+    background-color: #ffffff;
+    color:#495057;
+    border: 1px solid #ced4da;
+    display: inline-block;
+  } */
+  
